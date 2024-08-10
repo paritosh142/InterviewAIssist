@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/ui/loader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-// import { Boxes } from "@/components/ui/background-boxes";
-// import { Cover } from "@/components/ui/cover";
+import { Boxes } from "@/components/ui/background-boxes";
+import { Cover } from "@/components/ui/cover";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -30,9 +30,9 @@ export default function Home() {
   return (
     <div className="bg-gray-100 font-sans">
       <header className="bg-gray-800 flex items-center p-2 justify-between">
-        {/* <div className="absolute inset-0 z-10 overflow-hidden">
+        <div className="absolute inset-0 z-10 overflow-hidden">
           <Boxes />
-        </div> */}
+        </div>
         <div className="ml-2 animate-fadeIn ">
           <Image src="/logo.png" alt="logo" width={100} height={100} />
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center animate-fadeInUp relative z-10">
               <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
                 Ace Your Interview with AI <br /> at{" "}
-                {/* <Cover>Interview AIssist</Cover> */}
+                <Cover>Interview AIssist</Cover>
               </h1>
 
               <p className="mx-auto mt-4 max-w-xl sm:text-xl">
