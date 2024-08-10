@@ -32,7 +32,7 @@ const AddNewInterview = (props: Props) => {
   const { user } = useUser();
   const router = useRouter();
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     setLoading(true);
     event.preventDefault();
     const InputPrompt =
