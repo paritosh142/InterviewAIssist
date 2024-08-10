@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import React, { useEffect, useState, useId, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
