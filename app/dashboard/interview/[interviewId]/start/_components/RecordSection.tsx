@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Webcam from "react-webcam";

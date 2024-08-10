@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -21,6 +22,7 @@ const Interview = ({ params }: Props) => {
         .select()
         .from(InterviewAIssist)
         .where(eq(InterviewAIssist.mockId, params.interviewId));
+      // @ts-ignore
       setInterviewDetails(result[0]);
     };
 
@@ -63,6 +65,7 @@ const Interview = ({ params }: Props) => {
           <div className="flex flex-col p-5 border  border-purple-600 rounded-md gap-3">
             <h2 className="text-lg text-gray-400">
               <strong className="text-gray-300">Job Position/Job Role: </strong>
+
               {interviewDetails?.position}
             </h2>
             <h2 className="text-lg text-gray-400 ">

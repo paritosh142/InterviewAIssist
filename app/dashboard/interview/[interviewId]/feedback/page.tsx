@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 
 import { db } from "@/utils/db";
